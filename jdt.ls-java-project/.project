@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>jdt.ls-java-project</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/sgas/Gene.java</name>
+			<type>1</type>
+			<location>//home/implication/JavaWorkspace/sgas/src/sgas/Gene.java</location>
+		</link>
+		<link>
+			<name>src/sgas/GeneParser.java</name>
+			<type>1</type>
+			<location>/home/implication/JavaWorkspace/sgas/src/sgas/GeneParser.java</location>
+		</link>
+	</linkedResources>
+</projectDescription>

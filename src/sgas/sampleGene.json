@@ -1,0 +1,14 @@
+ {
+     "key1":{
+         "value":30.0,
+         "upperBound":50.0, 
+         "lowerBound":10.0
+     },
+
+     "key2":{
+         "value":50.0,
+         "upperBound":100.0, 
+         "lowerBound":0.0
+     }
+ }       
+

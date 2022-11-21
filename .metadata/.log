@@ -1,0 +1,4064 @@
+!SESSION 2022-11-21 16:06:47.998 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.16
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Djava.import.generatesMetadataFilesAtProjectRoot=false -Xmx1G -Xms100m
+Command-line arguments:  -data /home/implication/JavaWorkspace//sgas -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Djava.import.generatesMetadataFilesAtProjectRoot=false -Xmx1G -Xms100m
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.341
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.708
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.782
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.786
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.790
+!MESSAGE No workspace folders or root uri was defined. Falling back on /home/implication/JavaWorkspace/sgas
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.848
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.849
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.860
+!MESSAGE Wait for AutoBuildOffJob start
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.864
+!MESSAGE Wait for AutoBuildOffJob end 3ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.864
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.865
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.867
+!MESSAGE ProjectRegistryRefreshJob finished 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.868
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.930
+!MESSAGE Started org.eclipse.buildship.core 61ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:50.963
+!MESSAGE LoadingGradleVersionJob finished 33ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:51.013
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:51.016
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:51.148
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:52.640
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.core.resources 4 77 2022-11-21 16:06:52.703
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-11-21 16:06:52.704
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-11-21 16:06:52.704
+!MESSAGE /home/implication/JavaWorkspace/sgas overlaps the workspace location: /home/implication/JavaWorkspace/sgas
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2022-11-21 16:06:52.705
+!MESSAGE Initialization failed 
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importDir(EclipseProjectImporter.java:133)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.lambda$4(EclipseProjectImporter.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importToWorkspace(EclipseProjectImporter.java:100)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:124)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:253)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importDir(EclipseProjectImporter.java:129)
+	... 8 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:52.742
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:52.748
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:52.829
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:52.837
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:52.837
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:53.495
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:54.399
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:54.401
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:06:54.407
+!MESSAGE Validated 1. Took 452 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.189
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.199
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.213
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.261
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.336
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.354
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.673
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:49.741
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.171
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.171
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.174
+!MESSAGE Validated 1. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.301
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.328
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.472
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.536
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.621
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:50.683
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:51.155
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:51.155
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:51.156
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:53.965
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:53.971
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:54.000
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:54.031
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:54.450
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:54.450
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:54.451
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.381
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.447
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.530
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.594
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.967
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.982
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.987
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:55.993
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.030
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.358
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.363
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.364
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.423
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.840
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.841
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.841
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.883
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.886
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:56.945
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.034
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.410
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.412
+!MESSAGE The declared package "s" does not match the expected package "sgas" is of type PackageIsNotExpectedPackage
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.412
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.413
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.948
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.950
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.958
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:57.968
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.099
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.164
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.310
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.345
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.768
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.769
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.771
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.776
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.779
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.782
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.798
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.924
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:58.990
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:59.223
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:59.288
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:59.698
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:59.698
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:07:59.699
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.021
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.085
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.548
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.548
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.549
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.899
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:07.962
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:08.379
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:08.380
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:08.382
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:09.492
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:09.507
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:09.921
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:09.921
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:09.924
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:24.722
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:24.739
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:24.764
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:24.779
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:08:24.807
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2022-11-21 16:09:07.110 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.16
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Djava.import.generatesMetadataFilesAtProjectRoot=false -Xmx1G -Xms100m
+Command-line arguments:  -data /home/implication/JavaWorkspace//sgas -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Djava.import.generatesMetadataFilesAtProjectRoot=false -Xmx1G -Xms100m
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.276
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.706
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.771
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.775
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.781
+!MESSAGE No workspace folders or root uri was defined. Falling back on /home/implication/JavaWorkspace/sgas
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.825
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.825
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.834
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.835
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.838
+!MESSAGE ProjectRegistryRefreshJob finished 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.838
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.902
+!MESSAGE Started org.eclipse.buildship.core 64ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:09.914
+!MESSAGE LoadingGradleVersionJob finished 11ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:10.002
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:12.020
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.core.resources 4 77 2022-11-21 16:09:12.026
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-11-21 16:09:12.026
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-11-21 16:09:12.026
+!MESSAGE /home/implication/JavaWorkspace/sgas overlaps the workspace location: /home/implication/JavaWorkspace/sgas
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2022-11-21 16:09:12.028
+!MESSAGE Initialization failed 
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importDir(EclipseProjectImporter.java:133)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.lambda$4(EclipseProjectImporter.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importToWorkspace(EclipseProjectImporter.java:100)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:124)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:253)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importDir(EclipseProjectImporter.java:129)
+	... 8 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:12.074
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:12.096
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:12.099
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:12.116
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:12.116
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:13.208
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:13.672
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:13.673
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:09:13.685
+!MESSAGE Validated 1. Took 75 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.288
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.302
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.307
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.355
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.830
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.831
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.832
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.872
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.877
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.879
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:37.931
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:38.407
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:38.408
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:38.413
+!MESSAGE Validated 1. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.016
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.023
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.044
+!MESSAGE Reconciled 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.491
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.491
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.492
+!MESSAGE Validated 1. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.575
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.588
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.591
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.607
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.655
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.718
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.721
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.787
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.850
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:39.912
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:40.381
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:40.381
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:40.384
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:40.789
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:40.854
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:40.997
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:41.000
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:41.001
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:41.061
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:41.534
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:41.534
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:41.535
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.592
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.597
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.657
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.843
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.855
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.864
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.867
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.881
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:43.930
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.303
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.304
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.304
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.341
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.408
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.520
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.523
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.525
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.533
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.999
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.999
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:44.999
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:45.478
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:45.481
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:45.494
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:45.540
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:46.007
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:46.009
+!MESSAGE void is an invalid type for the variable C is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:46.009
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:46.010
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:47.138
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:47.201
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:47.575
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:47.604
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:47.751
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:47.816
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.233
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.233
+!MESSAGE void is an invalid type for the variable Crea is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.234
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.239
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.800
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.863
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:48.949
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.003
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.056
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.058
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.060
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.068
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.536
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.536
+!MESSAGE void is an invalid type for the variable Create is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.536
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.537
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.551
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.553
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.560
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.573
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.885
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:49.948
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:50.411
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:50.411
+!MESSAGE void is an invalid type for the variable CreateS is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:50.411
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:50.412
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:50.752
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:50.815
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.206
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.269
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.471
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.534
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.621
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.683
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:51.982
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.044
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.131
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.134
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.136
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.194
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.456
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.461
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.467
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.519
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.939
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.940
+!MESSAGE void is an invalid type for the variable CreateSample is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.940
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:52.941
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:53.760
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:53.823
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.038
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.101
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.263
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.325
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.413
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.475
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.943
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.943
+!MESSAGE void is an invalid type for the variable CreateSampleGene is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.943
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:54.944
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:55.638
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:55.709
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:55.787
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:55.850
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:56.272
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:56.273
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:56.273
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:58.952
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:58.956
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.017
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.239
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.242
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.256
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.258
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.305
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.336
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.725
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.725
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.732
+!MESSAGE Validated 1. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:11:59.937
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.000
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.086
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.099
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.534
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.553
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.974
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.974
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:00.974
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.334
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.396
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.520
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.585
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.678
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.740
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.862
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:01.924
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.032
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.095
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.200
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.262
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.730
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.730
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:02.731
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.462
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.466
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.524
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.535
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.611
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.673
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.758
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:14.820
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.121
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.125
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.126
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.183
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.648
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.648
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.648
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.823
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.827
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.835
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:15.962
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.102
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.106
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.166
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.252
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.366
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.373
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.429
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.552
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.898
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.898
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:16.899
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.045
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.047
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.106
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.186
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.198
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.212
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.258
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.355
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.358
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.383
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.406
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.419
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.720
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:17.782
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.245
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.246
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.246
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.254
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.265
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.267
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.268
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.317
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.727
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.728
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:18.728
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.111
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.113
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.172
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.235
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.635
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.635
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:19.636
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.297
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.316
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.318
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.360
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.831
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.838
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.839
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.843
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.861
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.863
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:21.904
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:22.368
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:22.368
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:22.369
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:22.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.055
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.145
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.208
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.306
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.316
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.456
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.517
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2022-11-21 16:12:23.592
+!MESSAGE Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:943)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1090)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:1047)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:595)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getMarkdownContentReader(JavadocContentAccess2.java:2511)
+	at org.eclipse.jdt.ls.core.internal.handlers.CompletionResolveHandler.lambda$0(CompletionResolveHandler.java:199)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:888)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1924)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:874)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:888)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1090)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:1047)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:595)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getMarkdownContentReader(JavadocContentAccess2.java:2511)
+	at org.eclipse.jdt.ls.core.internal.handlers.CompletionResolveHandler.lambda$0(CompletionResolveHandler.java:199)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1924)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:874)
+	... 9 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2022-11-21 16:12:23.595
+!MESSAGE Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:888)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1090)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:1047)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:595)
+	at org.eclipse.jdt.ls.core.internal.javadoc.JavadocContentAccess2.getMarkdownContentReader(JavadocContentAccess2.java:2511)
+	at org.eclipse.jdt.ls.core.internal.handlers.CompletionResolveHandler.lambda$0(CompletionResolveHandler.java:199)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava.base%2fjdk%2finternal%2fjimage%2fdecompressor%2fResourceDecompressor.StringsProvider.html
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1924)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:874)
+	... 9 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.982
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.983
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:23.983
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.388
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.403
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.404
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.413
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.832
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.833
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:24.833
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.000
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.062
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.149
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.161
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.627
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.627
+!MESSAGE 3 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:25.628
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.501
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.568
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.651
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.679
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.681
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.683
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:28.713
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:29.182
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:29.182
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:29.182
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:29.183
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:31.382
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:31.444
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:31.530
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:31.592
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:32.065
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:32.066
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:32.066
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:32.066
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:45.486
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:45.489
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:45.491
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:45.492
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:45.551
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:46.010
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:46.011
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:46.011
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:12:46.011
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:16.703
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:16.705
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:16.707
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:16.765
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.183
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.183
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.184
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.673
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.674
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.676
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:17.732
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:18.150
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:18.150
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:18.150
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:18.155
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.340
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.472
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.477
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.533
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.700
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.703
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.704
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.711
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:19.764
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:20.240
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:20.241
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:20.250
+!MESSAGE Validated 1. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.712
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.716
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.718
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.719
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.778
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.887
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:21.948
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.035
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.049
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.051
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.096
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.159
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.215
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.276
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.402
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.404
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.405
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.462
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.923
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.923
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.924
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:22.924
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:13:23.983
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:10.826
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:10.900
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:11.363
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:11.363
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:11.363
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:11.375
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:11.376
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:15:11.376
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.261
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.327
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.807
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.808
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.819
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.819
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:48.819
+!MESSAGE Validated 2. Took 42 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:51.878
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:51.939
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:52.410
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:52.410
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:52.420
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:52.420
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:52.420
+!MESSAGE Validated 2. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:54.927
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:54.930
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:54.935
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:54.988
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.088
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.099
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.241
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.304
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.774
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.774
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.784
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.784
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:55.784
+!MESSAGE Validated 2. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.062
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.064
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.068
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.122
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.587
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.587
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.594
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.594
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.594
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.824
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.835
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:56.975
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.036
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.239
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.300
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.765
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.765
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.775
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.775
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:16:57.776
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.247
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.254
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.259
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.309
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.444
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.506
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.615
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.627
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.765
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:46.827
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:47.297
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:47.297
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:47.307
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:47.307
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:47.308
+!MESSAGE Validated 2. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:48.606
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:48.610
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:48.617
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:48.618
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:48.755
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:48.818
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.287
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.306
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.307
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.319
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.319
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.321
+!MESSAGE Validated 2. Took 52 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.382
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.849
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.849
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.857
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.857
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.858
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.893
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:49.903
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.041
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.102
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.570
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.570
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.577
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.577
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:50.578
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.135
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.198
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.671
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.671
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.679
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.679
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:52.680
+!MESSAGE Validated 2. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.233
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.238
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.256
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.294
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.760
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.761
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.771
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.771
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:17:53.771
+!MESSAGE Validated 2. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.606
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.610
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.617
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.667
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.773
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.835
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.923
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:01.983
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.319
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.380
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.851
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.851
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.860
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.860
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.860
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.885
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.889
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.896
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:02.946
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.034
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.095
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.184
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.237
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.333
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.389
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.859
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.859
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.868
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.868
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.868
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.900
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:03.961
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.148
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.209
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.298
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.308
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.729
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.729
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.736
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.736
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:04.737
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.443
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.453
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.918
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.918
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.926
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.927
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.927
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:06.973
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.028
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.142
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.204
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.624
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.624
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.633
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.634
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:07.634
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.140
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.202
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.396
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.457
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.873
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.873
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.882
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.882
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:08.882
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.013
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.024
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.490
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.491
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.498
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.498
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.498
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.627
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:35.650
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:36.113
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:36.114
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:36.124
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:36.124
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:36.125
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:38.544
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:38.605
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.072
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.072
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.079
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.080
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.080
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.684
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.687
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.689
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.744
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.892
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:39.953
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.068
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.129
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.597
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.597
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.605
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.605
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:40.605
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.045
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.106
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.119
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.121
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.121
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.148
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.565
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.565
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.572
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.573
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.573
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.717
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.779
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.866
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:43.919
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.331
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.331
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.337
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.338
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.338
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.653
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.658
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.664
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.666
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.803
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:44.856
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.321
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.322
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.332
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.332
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.332
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.659
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.720
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.809
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.870
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:45.959
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:46.020
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:46.483
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:46.483
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:46.491
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:46.491
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:46.491
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:47.923
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:47.982
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:48.098
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:48.158
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:48.490
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:48.552
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.016
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.016
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.023
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.023
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.024
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.291
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.351
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.440
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.501
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.918
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.918
+!MESSAGE 6 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.926
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.926
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:49.926
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.459
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.469
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.936
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.937
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.949
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.949
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:55.949
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.060
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.067
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.069
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.122
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.589
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.590
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.603
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.603
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:18:57.605
+!MESSAGE Validated 2. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:00.792
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:00.803
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:01.274
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:01.274
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:01.281
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:01.281
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:01.282
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:03.726
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:03.729
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:03.733
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:03.787
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:04.252
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:04.252
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:04.258
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:04.259
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:04.259
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:05.197
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:05.259
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:05.674
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:05.712
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:05.986
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:06.048
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:06.466
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:06.466
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:06.473
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:06.473
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:06.474
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.512
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.523
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.983
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.983
+!MESSAGE 8 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.990
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.990
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:12.991
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.037
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.049
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.512
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.512
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.521
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.521
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:27.522
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.017
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.078
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.544
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.544
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.549
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.549
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:40.549
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:44.948
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:44.959
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:45.426
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:45.426
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:45.431
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:45.432
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:45.432
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:47.686
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:47.747
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:48.215
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:48.216
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:48.223
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:48.223
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:48.224
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.354
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.424
+!MESSAGE Reconciled 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.889
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.889
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.896
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.896
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:51.897
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.003
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.013
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.474
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.474
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.482
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.482
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:54.482
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:57.763
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:57.771
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:57.773
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:57.825
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:58.241
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:58.242
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:58.249
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:58.249
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:19:58.249
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.492
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.498
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.499
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.500
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.557
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.972
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.973
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.980
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.981
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:08.981
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:09.484
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:09.488
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:09.545
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:09.584
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.012
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.012
+!MESSAGE 12 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.019
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.019
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.020
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.475
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.480
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.486
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.560
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.569
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.570
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.581
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:10.640
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.045
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.045
+!MESSAGE 12 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.052
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.053
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.053
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.722
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.725
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.783
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.795
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.802
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.803
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.819
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.868
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.886
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.887
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.942
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.946
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.965
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.966
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.967
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:11.987
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:12.456
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:12.457
+!MESSAGE 12 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:12.464
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:12.464
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:12.464
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.346
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.349
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.360
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.360
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.673
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.733
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.921
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:13.982
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.193
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.255
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.676
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.676
+!MESSAGE 11 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.684
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.684
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:14.685
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:15.804
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:15.865
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:15.953
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:15.964
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.435
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.435
+!MESSAGE 11 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.443
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.443
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.443
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.602
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.606
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.607
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.616
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:16.969
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.019
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.387
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.392
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.393
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.422
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.643
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.705
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.873
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.877
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.878
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:17.936
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.407
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.407
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.415
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.415
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.415
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.827
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.888
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:18.976
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.035
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.189
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.204
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.205
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.206
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.248
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.710
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.710
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.717
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.717
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:19.717
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.108
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.111
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.112
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.113
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.121
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.292
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.352
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.440
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.500
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.589
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:21.599
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.007
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.007
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.014
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.014
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.015
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.779
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.785
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.786
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.786
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.844
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:22.978
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.039
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.126
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.136
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.275
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.287
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.757
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.757
+!MESSAGE 9 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.764
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.765
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:23.765
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.170
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.230
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.694
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.695
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.701
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.702
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:26.702
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.316
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.376
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.848
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.848
+!MESSAGE 16 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.856
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.856
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:30.858
+!MESSAGE Validated 2. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:38.715
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:38.776
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:39.245
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:39.245
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:39.253
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:39.253
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:39.254
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:43.323
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:43.383
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:43.819
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:43.835
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:44.294
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:44.294
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:44.302
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:44.302
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:44.302
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.137
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.141
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.142
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.143
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.151
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.613
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.614
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.619
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.619
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:46.619
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.139
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.200
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.288
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.299
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.762
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.763
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.769
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.769
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:47.769
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.268
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.275
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.276
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.277
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.335
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.791
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.792
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.798
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.798
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:48.798
+!MESSAGE Validated 2. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:49.683
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:49.743
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:49.832
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:49.892
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.303
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.303
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.311
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.311
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.312
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.764
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:50.774
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.235
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.235
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.242
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.243
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.243
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.508
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:51.568
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:52.028
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:52.028
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:52.036
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:52.036
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:52.037
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:56.547
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:56.558
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:56.907
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:56.963
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.058
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.070
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.532
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.532
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.541
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.541
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:57.542
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:20:59.961
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.022
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.436
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.436
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.444
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.444
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.444
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.729
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:00.790
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.250
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.251
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.257
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.257
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.258
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.912
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:01.974
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:02.441
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:02.441
+!MESSAGE 7 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:02.446
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:02.446
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:02.446
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:03.923
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:03.985
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:04.399
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:04.399
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:04.406
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:04.406
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:04.406
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.481
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.486
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.487
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.491
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.904
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.904
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.911
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.911
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:08.911
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.365
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.369
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.370
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.370
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.429
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.890
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.891
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.899
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.899
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:11.899
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.443
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.505
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.970
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.970
+!MESSAGE 4 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.976
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.976
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:34.977
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:37.768
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:37.831
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.040
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.102
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.243
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.304
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.451
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.512
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.610
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.621
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.759
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:38.820
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.097
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.156
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.384
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.445
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.603
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.613
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.808
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:39.869
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:40.000
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:40.061
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:40.401
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:40.411
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:40.787
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:40.812
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:41.285
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:41.286
+!MESSAGE 16 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:41.292
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:41.292
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:41.292
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.403
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.465
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.930
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.930
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.939
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.939
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:44.939
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.036
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.092
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.513
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.513
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.513
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.519
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.519
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.519
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.547
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:45.607
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:46.063
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:46.064
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:46.064
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:46.068
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:46.069
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:21:46.069
+!MESSAGE Validated 2. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:19.952
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.013
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.346
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.406
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.869
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.869
+!MESSAGE 10 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.875
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.875
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:22:20.876
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.412
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.472
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.936
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.936
+!MESSAGE This method must return a result of type String is of type ShouldReturnValue
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.936
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.941
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.941
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:23:08.941
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 16:48:45.593
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:24.947
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.007
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.465
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.465
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.472
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.472
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.472
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.714
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:25.774
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:26.182
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:26.182
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:26.188
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:26.189
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:26.189
+!MESSAGE Validated 2. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.362
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.367
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.369
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.369
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.426
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.832
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.832
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.837
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.837
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.837
+!MESSAGE Validated 2. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.875
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:27.935
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.023
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.083
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.432
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.435
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.436
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.438
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.495
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.906
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.906
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.913
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.913
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:28.913
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.291
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.352
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.442
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.503
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.914
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.915
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.920
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.921
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:29.921
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:08:31.412
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.394
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.455
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.869
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.869
+!MESSAGE 2 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.877
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.877
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.877
+!MESSAGE Validated 2. Took 21 ms
