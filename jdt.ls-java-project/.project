@@ -16,9 +16,14 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/sgas/Chromosome.java</name>
+			<type>1</type>
+			<location>//home/implication/JavaWorkspace/sgas/src/sgas/Chromosome.java</location>
+		</link>
+		<link>
 			<name>src/sgas/Gene.java</name>
 			<type>1</type>
-			<location>//home/implication/JavaWorkspace/sgas/src/sgas/Gene.java</location>
+			<location>/home/implication/JavaWorkspace/sgas/src/sgas/Gene.java</location>
 		</link>
 		<link>
 			<name>src/sgas/GeneParser.java</name>

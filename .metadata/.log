@@ -4062,3 +4062,4934 @@ Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL:
 
 !ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 17:29:10.877
 !MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:49.693
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:49.755
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:50.164
+!MESSAGE begin problem for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:50.164
+!MESSAGE 1 problems reported for /GeneParser.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:50.172
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:50.172
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:50.173
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:51.862
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:51.966
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:51.966
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-21 18:04:51.995
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2022-11-22 11:11:19.346 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.16
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Djava.import.generatesMetadataFilesAtProjectRoot=false -Xmx1G -Xms100m
+Command-line arguments:  -data /home/implication/JavaWorkspace//sgas -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Djava.import.generatesMetadataFilesAtProjectRoot=false -Xmx1G -Xms100m
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:21.579
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:21.899
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:21.960
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:21.969
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:21.975
+!MESSAGE No workspace folders or root uri was defined. Falling back on /home/implication/JavaWorkspace/sgas
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.020
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.021
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.032
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.032
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.034
+!MESSAGE ProjectRegistryRefreshJob finished 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.035
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.130
+!MESSAGE Started org.eclipse.buildship.core 95ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:22.177
+!MESSAGE LoadingGradleVersionJob finished 47ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:23.853
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.core.resources 4 77 2022-11-22 11:11:23.857
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-11-22 11:11:23.858
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-11-22 11:11:23.858
+!MESSAGE /home/implication/JavaWorkspace/sgas overlaps the workspace location: /home/implication/JavaWorkspace/sgas
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2022-11-22 11:11:23.860
+!MESSAGE Initialization failed 
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importDir(EclipseProjectImporter.java:133)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.lambda$4(EclipseProjectImporter.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importToWorkspace(EclipseProjectImporter.java:100)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:124)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:253)
+	at org.eclipse.jdt.ls.core.internal.managers.EclipseProjectImporter.importDir(EclipseProjectImporter.java:129)
+	... 8 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:24.800
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:24.801
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:24.805
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:24.807
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:24.812
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:24.813
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:25.469
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:25.977
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:25.979
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:11:25.991
+!MESSAGE Validated 1. Took 71 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:35.768
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:35.848
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:36.343
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:36.344
+!MESSAGE 1 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:36.388
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:36.388
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:36.390
+!MESSAGE Validated 2. Took 90 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:39.858
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:39.888
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:39.940
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.386
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.386
+!MESSAGE 1 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.461
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.461
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.469
+!MESSAGE Validated 2. Took 127 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.479
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.516
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.519
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.534
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.571
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.730
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.744
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.775
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.783
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.810
+!MESSAGE Reconciled 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:40.926
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.228
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.228
+!MESSAGE 1 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.250
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.250
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.252
+!MESSAGE Validated 2. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.326
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.354
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.482
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.542
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.559
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.562
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.564
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:41.587
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:42.055
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:42.058
+!MESSAGE The value of the field Chromosome.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:42.058
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:42.080
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:42.080
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:42.082
+!MESSAGE Validated 2. Took 45 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.516
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.524
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.526
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.528
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.947
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.947
+!MESSAGE The value of the field Chromosome.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.948
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.976
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.976
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:51.977
+!MESSAGE Validated 2. Took 48 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.295
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.299
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.349
+!MESSAGE Reconciled 1. Took 45 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.631
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.635
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.637
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.653
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.657
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.985
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.989
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:53.998
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.000
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.053
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.063
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.145
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.209
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.334
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.350
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.549
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.551
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.553
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:54.615
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:55.033
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:55.034
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:55.048
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:55.049
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:17:55.050
+!MESSAGE Validated 2. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:17.389
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:17.469
+!MESSAGE Reconciled 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:17.540
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:17.609
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:17.975
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.013
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.144
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.148
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.157
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.160
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.586
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.587
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.598
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.599
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.599
+!MESSAGE Validated 2. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.920
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:18.938
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.129
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.195
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.662
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.663
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.675
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.675
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:19.675
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:20.470
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:20.536
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.005
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.005
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.015
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.015
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.016
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.097
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.100
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.115
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.118
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.247
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.313
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.781
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.781
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.794
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.794
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:21.795
+!MESSAGE Validated 2. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:23.880
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:23.883
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:23.896
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.074
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.077
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.099
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.142
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.254
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.613
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.613
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.623
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.624
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:24.624
+!MESSAGE Validated 2. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.681
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.684
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.745
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.819
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.875
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.882
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.883
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:25.945
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.364
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.364
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.373
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.374
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.374
+!MESSAGE Validated 2. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.730
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.734
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.742
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.795
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.879
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:26.933
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.049
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.065
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.483
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.484
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.497
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.497
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.497
+!MESSAGE Validated 2. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.508
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.574
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.664
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:27.679
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.100
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.100
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.113
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.113
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.114
+!MESSAGE Validated 2. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.511
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.574
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.711
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.714
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.715
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:28.724
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.191
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.192
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.192
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.192
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.208
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.208
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:29.209
+!MESSAGE Validated 2. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.322
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.327
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.337
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.464
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.477
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.479
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.541
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:31.660
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.007
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.007
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.017
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.017
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.019
+!MESSAGE Validated 2. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.190
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.192
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.254
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.313
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.719
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.719
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.729
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.729
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:32.729
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.328
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.347
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.349
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.393
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.808
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.809
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.818
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.818
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:33.818
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.056
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.058
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.060
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.121
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.447
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.450
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.485
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.510
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.648
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.713
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.816
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.831
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:34.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.059
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.344
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.408
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.535
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.599
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.720
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.734
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.921
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.924
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.925
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:35.985
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.127
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.190
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.277
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.342
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.425
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.489
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.948
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.948
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.948
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.948
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.957
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.957
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:36.958
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:39.999
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.062
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.525
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.526
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.526
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.526
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.536
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.536
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:40.537
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:43.586
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:43.596
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:43.597
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:43.649
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:44.113
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:44.114
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:44.122
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:44.122
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:44.123
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.097
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.101
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.109
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.111
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.543
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.563
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.703
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.766
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.856
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:45.919
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.005
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.057
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.520
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.520
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.521
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.521
+!MESSAGE The value of the field Chromosome<Val>.upper is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.521
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.530
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.530
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.530
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.914
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:46.979
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.066
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.129
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.319
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.383
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.797
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.797
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.797
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.797
+!MESSAGE The value of the field Chromosome<Val>.upperbou is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.798
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.806
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.806
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:47.806
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:48.554
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:48.619
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:48.730
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:48.744
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:48.935
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:48.999
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.413
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.413
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.414
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.414
+!MESSAGE The value of the field Chromosome<Val>.upper is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.414
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.424
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.424
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:49.424
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:50.018
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:50.032
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:50.253
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:50.317
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:50.752
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:50.768
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:51.065
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:51.130
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:51.529
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:51.591
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.053
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.053
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.054
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.054
+!MESSAGE The value of the field Chromosome<Val>.upperBount is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.054
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.063
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.064
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:52.064
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.087
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.151
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.614
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.615
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.615
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.615
+!MESSAGE The value of the field Chromosome<Val>.upperBoun is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.616
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.625
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.625
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.625
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.808
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:53.873
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.225
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.307
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.309
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.311
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.373
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.786
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.787
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.797
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.797
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:54.798
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:56.809
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:56.811
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:56.818
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:56.871
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:56.957
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.020
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.128
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.192
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.292
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.426
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.478
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.894
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.894
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.894
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.895
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.895
+!MESSAGE The value of the field Chromosome<Val>.lower is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.895
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.904
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.904
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:57.904
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:58.215
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:58.279
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:58.666
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:58.681
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.066
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.083
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.549
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.550
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.550
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.551
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.551
+!MESSAGE The value of the field Chromosome<Val>.lowerBou is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.551
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.565
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.565
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:21:59.565
+!MESSAGE Validated 2. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.001
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.065
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.151
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.166
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.627
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.628
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.628
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.628
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.628
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.628
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.637
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.637
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:00.638
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:05.912
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:05.914
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:05.915
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:05.975
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.216
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.219
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.219
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.279
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.743
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.744
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.744
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.744
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.745
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.745
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.754
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.754
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:22:06.754
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.013
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.077
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.163
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.227
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.691
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.692
+!MESSAGE The value of the field Chromosome<Val>.key is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.692
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.692
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.692
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.692
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.700
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.700
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:45.700
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:47.655
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:47.718
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.130
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.131
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.131
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.131
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.132
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.139
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.139
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:23:48.139
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:01.598
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:01.602
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:01.603
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:01.662
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.125
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.125
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.126
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.126
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.126
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.135
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.135
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.136
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.557
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.560
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.561
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:02.621
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.034
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.035
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.035
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.035
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.035
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.042
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.043
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:03.043
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:28.529
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:28.594
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:28.679
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:28.743
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.208
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.209
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.210
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.210
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.211
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.220
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.220
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:24:29.220
+!MESSAGE Validated 2. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:33.898
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:33.903
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:33.905
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:33.906
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:33.966
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.425
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.426
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.426
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.426
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.426
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.435
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.441
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:34.441
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.353
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.357
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.418
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.513
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.515
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.528
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.529
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.602
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.799
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.862
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:35.949
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.002
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.098
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.154
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.211
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.213
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.256
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.561
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.564
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.565
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.575
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.990
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.990
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.998
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.998
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:36.998
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.458
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.463
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.523
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.657
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.783
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.786
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.847
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.960
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.962
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:37.970
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.000
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.026
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.493
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.493
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.503
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.504
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:38.504
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:40.594
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:40.660
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.072
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.073
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.081
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.081
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.081
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.519
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.583
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.669
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:41.683
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:42.096
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:42.096
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:42.105
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:42.105
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:42.105
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:43.612
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:43.677
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:43.761
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:43.826
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.289
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.289
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.297
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.297
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.297
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.840
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:44.906
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:45.372
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:45.372
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:45.380
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:45.380
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:45.380
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:47.858
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:47.862
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:47.921
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:47.974
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.383
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.383
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.391
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.391
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.391
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.569
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.571
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.632
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.666
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.716
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.718
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.730
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:48.812
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.191
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.191
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.199
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.199
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.199
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.818
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:49.883
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:50.341
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:50.341
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:50.349
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:50.349
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:50.349
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.120
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.194
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.269
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.322
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.786
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.786
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.793
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.793
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:51.793
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.122
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.127
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.131
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.186
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.280
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.343
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.744
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.796
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.840
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.842
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.843
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:53.897
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:54.383
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:54.383
+!MESSAGE 6 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:54.388
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:54.388
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:54.389
+!MESSAGE Validated 2. Took 42 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:55.768
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:55.770
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:55.778
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:55.832
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:55.918
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:55.984
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.067
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.084
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.549
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.549
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.563
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.563
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.563
+!MESSAGE Validated 2. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.709
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.722
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.858
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:56.923
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.272
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.326
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.414
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.415
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.416
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.479
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.898
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.902
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.908
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:57.931
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.091
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.156
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.627
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.628
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.628
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.628
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.636
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.636
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.636
+!MESSAGE Validated 2. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.889
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.952
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.986
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.987
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:58.988
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.041
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.500
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.501
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.501
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.501
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.509
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.509
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:27:59.509
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.203
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.207
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.213
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.269
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.385
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.449
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.643
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:04.657
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.071
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.071
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.071
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.072
+!MESSAGE 8 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.079
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.079
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.080
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.330
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.333
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.334
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.394
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.861
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.861
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.862
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.862
+!MESSAGE 8 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.870
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.870
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:05.870
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.337
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.340
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.344
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.401
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.811
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.812
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.812
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.812
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.820
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.820
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.820
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.864
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:06.922
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.027
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.041
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.176
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.229
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.326
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.383
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.842
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.842
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.843
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.843
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.850
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.850
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:07.851
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:08.619
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:08.633
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:08.768
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:08.820
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.232
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.232
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.232
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.233
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.240
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.240
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:09.240
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:10.856
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:10.920
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:10.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:10.995
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:10.995
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.046
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.511
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.512
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.513
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.513
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.520
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.520
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:11.520
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:12.339
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:12.344
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:12.348
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:12.403
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:12.626
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:12.689
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.036
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.091
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.217
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.219
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.220
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.280
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.737
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.738
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.738
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.738
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.746
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.747
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.747
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.931
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.936
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.939
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:13.995
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.080
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.144
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.265
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.279
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.740
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.741
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.741
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.741
+!MESSAGE 8 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.749
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.749
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.749
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.937
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.939
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:14.940
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.000
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.460
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.461
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.461
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.461
+!MESSAGE 8 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.468
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.468
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.469
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.769
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.773
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.777
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.832
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:15.938
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.002
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.462
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.463
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.463
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.463
+!MESSAGE 5 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.470
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.470
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.471
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.610
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.624
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.759
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:16.825
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.073
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.137
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.225
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.289
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.752
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.752
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.753
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.753
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.753
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.753
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.761
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.761
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:17.761
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.651
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.715
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.801
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.854
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.895
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.896
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.897
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:18.956
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.371
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.371
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.372
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.372
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.372
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.372
+!MESSAGE 6 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.378
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.378
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:19.379
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.369
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.436
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.519
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.584
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.865
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.868
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.868
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:20.879
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.105
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.119
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.255
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.320
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.402
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.421
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.552
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.616
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:21.945
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.008
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.431
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.432
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.445
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.445
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.446
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.446
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.483
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.487
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:28:22.489
+!MESSAGE Validated 2. Took 77 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.387
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.451
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.535
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.549
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.562
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.564
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.565
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:05.626
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.089
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.090
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.090
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.090
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.090
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.090
+!MESSAGE 6 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.096
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.096
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:06.096
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.345
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.410
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.492
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.544
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.955
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.956
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.956
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.956
+!MESSAGE Duplicate field Chromosome<Val>.value is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.957
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.957
+!MESSAGE 6 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.964
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.964
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:10.964
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:17.352
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:17.416
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:17.605
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:17.669
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.125
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.126
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.126
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.126
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.133
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.133
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:18.134
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:19.621
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:19.684
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:19.824
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:19.888
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.046
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.059
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.268
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.331
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.743
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.744
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.744
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.744
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.751
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.751
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.752
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.790
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:20.853
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.312
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.312
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.312
+!MESSAGE Duplicate field Chromosome<Val>.lowerBound is of type DuplicateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.312
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.319
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.319
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:21.320
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.213
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.277
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.401
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.415
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.592
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.656
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.784
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:22.798
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.256
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.257
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.263
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.264
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.264
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.383
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.447
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.903
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.903
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.910
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.911
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:31:23.911
+!MESSAGE Validated 2. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.079
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.147
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.610
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.610
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.611
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.611
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.611
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.619
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.619
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:12.620
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:15.692
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:15.698
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:15.699
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:15.700
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:15.761
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.218
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.218
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.218
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.218
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.218
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.233
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.233
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.234
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.692
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.694
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.757
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.829
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.844
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.845
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.897
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.953
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.962
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:16.965
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.002
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.015
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.111
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.167
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.324
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.326
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.338
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.411
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.807
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.807
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.815
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.815
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:17.815
+!MESSAGE Validated 2. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:18.766
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:18.830
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:18.916
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:18.980
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.127
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.129
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.133
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.194
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.274
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.327
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.794
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.794
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.802
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.802
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:19.803
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.214
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.218
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.219
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.279
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.549
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.613
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.673
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.675
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.676
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.737
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.941
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:20.944
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.005
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.029
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.044
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.045
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.098
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.121
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.397
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.400
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.460
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.476
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.923
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.923
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.932
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.932
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:21.932
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.183
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.248
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.292
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.294
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.295
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.336
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.796
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.796
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.797
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.797
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.797
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.804
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.805
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:22.805
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.232
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.235
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.246
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.303
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.502
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.506
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.567
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.573
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.595
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.596
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.628
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.658
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.757
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.810
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:23.990
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.001
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.021
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.055
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.165
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.167
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.168
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.229
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.687
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.687
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.694
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.694
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:24.694
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.204
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.206
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.223
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.268
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.445
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.508
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.593
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.606
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.782
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.845
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.912
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.914
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:25.926
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.231
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.295
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.378
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.442
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.836
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.839
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.839
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:26.899
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.126
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.190
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.265
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.267
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.268
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.330
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.645
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.650
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.700
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.708
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.932
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.937
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.956
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:27.996
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.325
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.338
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.344
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.346
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.389
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.497
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.561
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.645
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.708
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.972
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.974
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:28.986
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.005
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.447
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.448
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.454
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.454
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.454
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.558
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.606
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.740
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.753
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:29.943
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.007
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.134
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.196
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.658
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.658
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.666
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.666
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:30.666
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.014
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.078
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.129
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.130
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.130
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.192
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.651
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.652
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.652
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.652
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.652
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.659
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.659
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:31.659
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.142
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.145
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.203
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.206
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.327
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.331
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.342
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.423
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.441
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.453
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.481
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.485
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.589
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:32.632
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.006
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.013
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.026
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.033
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.494
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.494
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.508
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.508
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:33.508
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:34.397
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:34.461
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:34.670
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:34.734
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:34.819
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:34.832
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.253
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.273
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.274
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.316
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.730
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.730
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.737
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.737
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:35.737
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.293
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.295
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.295
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.356
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.765
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.765
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.772
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.772
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:36.772
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:37.205
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:37.268
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:37.541
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:37.543
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:37.543
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:37.604
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:38.017
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:38.017
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:38.024
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:38.024
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:38.024
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.064
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.069
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.128
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.130
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.269
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.271
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.282
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.337
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.741
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.741
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.748
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.748
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.748
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.912
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.931
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.933
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:39.945
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.403
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.403
+!MESSAGE The assignment to variable lowerBound has no effect is of type AssignmentHasNoEffect
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.403
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.410
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.410
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.410
+!MESSAGE Validated 2. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.944
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.949
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.958
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:40.970
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.246
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.448
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.512
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.979
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.979
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.987
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.987
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:41.987
+!MESSAGE Validated 2. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.078
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.139
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.273
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.291
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.751
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.752
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.760
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.760
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:42.760
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:43.751
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:43.814
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.272
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.272
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.272
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.272
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.272
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.280
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.280
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:44.281
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.317
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.380
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.466
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.480
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.943
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.943
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.943
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.943
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.943
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.950
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.950
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:45.950
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:46.665
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:46.671
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:46.672
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:46.729
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.189
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.190
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.190
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.190
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.190
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.198
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.198
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.198
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.416
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.420
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.421
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.436
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.895
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.896
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.896
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.896
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.897
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.903
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.903
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 11:32:47.903
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:29.551
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:29.615
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:29.701
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:29.765
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.229
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.230
+!MESSAGE The value of the field Chromosome<Val>.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.230
+!MESSAGE The value of the field Chromosome<Val>.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.230
+!MESSAGE The value of the field Chromosome<Val>.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.230
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.237
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.237
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:30.238
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.135
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.200
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.608
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.608
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.615
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.616
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:44.616
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:45.905
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:45.968
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:46.430
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:46.430
+!MESSAGE 2 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:46.437
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:46.437
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:46.438
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.435
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.499
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.619
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.683
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.835
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.839
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.842
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:47.848
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.315
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.315
+!MESSAGE 1 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.322
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.322
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.322
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.977
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.979
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.980
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:48.990
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:49.400
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:49.400
+!MESSAGE 1 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:49.406
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:49.406
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:49.407
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.218
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.221
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.279
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.281
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.403
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.407
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.457
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.467
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.587
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.591
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.592
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:53.651
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.065
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.065
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.073
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.073
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.073
+!MESSAGE Validated 2. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.824
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.833
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.885
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.897
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.898
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.922
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:54.957
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.065
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.067
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.122
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.128
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.292
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.296
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.355
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.355
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.604
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.608
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.663
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:55.668
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:56.075
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:56.075
+!MESSAGE 1 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:56.081
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:56.081
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:56.082
+!MESSAGE Validated 2. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:57.700
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:57.709
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:57.710
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:57.764
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.177
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.177
+!MESSAGE The method Chromosome in type Chromosome can only set one of public / protected / private is of type IllegalVisibilityModifierCombinationForMethod
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.177
+!MESSAGE 3 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.184
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.184
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.184
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.861
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.863
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.924
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:58.924
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.012
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.014
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.068
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.075
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.210
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.213
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.223
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.264
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.356
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.358
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.371
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.421
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.702
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.707
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.755
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:08:59.765
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.175
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.175
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.175
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.176
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.176
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.183
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.183
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:00.183
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:02.925
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:02.991
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:03.465
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:03.465
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:03.472
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:03.472
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:03.472
+!MESSAGE Validated 2. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.065
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.068
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.123
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.128
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.171
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.172
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.184
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.233
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.395
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.399
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.449
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.459
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.927
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.927
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.927
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.927
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.927
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.934
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.934
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:04.935
+!MESSAGE Validated 2. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.188
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.193
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.201
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.235
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.267
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.269
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.291
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.319
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.701
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.701
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.702
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.702
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.702
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.709
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.710
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:05.710
+!MESSAGE Validated 2. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:07.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:07.470
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:07.470
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:07.528
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:07.994
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:07.994
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.002
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.002
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.002
+!MESSAGE Validated 2. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.228
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.231
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.241
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.276
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.373
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.374
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.425
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.425
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.570
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.573
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.626
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:08.633
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.046
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.046
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.046
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.046
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.046
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.053
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.053
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.053
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.426
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.428
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.476
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.489
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.503
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.504
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.528
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.543
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.988
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.988
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.988
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.988
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.988
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.995
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.996
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:09.996
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:12.836
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:12.840
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:12.841
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:12.902
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:13.313
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:13.313
+!MESSAGE 7 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:13.321
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:13.321
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:13.322
+!MESSAGE Validated 2. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.404
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.411
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.467
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.473
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.500
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.501
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.550
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.556
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.778
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.784
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.793
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:14.810
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.254
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.254
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.254
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.255
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.255
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.260
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.260
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.261
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.730
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:15.793
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.084
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.147
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.341
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.404
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.491
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.505
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.966
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.966
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.966
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.966
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.966
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.972
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.972
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:09:16.973
+!MESSAGE Validated 2. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:58.926
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:58.988
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.449
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.449
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.449
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.449
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.450
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.456
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.456
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.456
+!MESSAGE Validated 2. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.747
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:10:59.811
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.221
+!MESSAGE begin problem for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.221
+!MESSAGE The value of the field Chromosome.value is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.221
+!MESSAGE The value of the field Chromosome.upperBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.221
+!MESSAGE The value of the field Chromosome.lowerBound is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.221
+!MESSAGE 4 problems reported for /Chromosome.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.227
+!MESSAGE begin problem for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.227
+!MESSAGE 1 problems reported for /Gene.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:00.227
+!MESSAGE Validated 2. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-11-22 12:11:03.532
+!MESSAGE >> document/didSave
