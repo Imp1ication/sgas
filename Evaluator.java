@@ -1,7 +1,5 @@
 package sgas;
 
-import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -9,42 +7,58 @@ import com.codingame.gameengine.runner.MultiplayerGameRunner;
 import com.codingame.gameengine.runner.simulate.GameResult;
 
 public interface Evaluator {
-    public void evaluate(Individual[] indivs, int size);
-    public void evaluate(Individual indivs);
+    public double evaluate(Individual indiv);
+    // public void evaluate(Individual indivs);
+    // public void evaluate(Individual[] indivs, int size);
 }
 
-class BossWinRateEvaluator implements Evaluator {
-    /* File path */
-    private int FIGHT_NUM = 5;
+class BossWinScoreEvaluator implements Evaluator {
+    private int FIGHT_NUM = 10;
+    private long SEED = 53295539L;
+    private boolean isRandomSeed = false;
     private String agentBoss;
     private String agentPlayer;
     private String chromBuffer = "bot/chromBuffer.txt";
 
-    public void addBoss(String bossAgent) {
-        agentBoss = bossAgent;
+    // Constructor
+    public BossWinScoreEvaluator(String bossAgent, String playerAgent, int fightNum, boolean isRandomSeed) {
+        this.agentBoss = bossAgent;
+        this.agentPlayer = playerAgent;
+        this.FIGHT_NUM = fightNum;
+        this.isRandomSeed = isRandomSeed;
     }
 
-    public void addPlayer(String playerAgent) {
-        agentPlayer = playerAgent;
-    }
-
-    public void setBuffer(String bufferFilePath) {
+    // Setters and Getters
+    public void setChromBuffer(String bufferFilePath) {
         chromBuffer = bufferFilePath;
     }
 
-    public void setFightNum(int num) {
-        FIGHT_NUM = num;
-    }
+    // Evaluate
+    public double evaluate(Individual indiv) {
+        // write gene file
+        try {
+            FileWriter fw = new FileWriter(chromBuffer);
+            fw.write(indiv.toString());
+            fw.flush();
+            fw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-    public void evaluate(Individual indiv) {
+        // run game
         double score = 0;
 
         for (int i = 0; i < FIGHT_NUM; ++i) {
-            // run game
+            System.out.println("  Fight " + (i + 1) + "/" + FIGHT_NUM);
+
             MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
             gameRunner.setLeagueLevel(3);
-            gameRunner.setSeed(53295539L);
-            // (long) (Math.random() * 1000000)
+
+            if (isRandomSeed) {
+                gameRunner.setSeed((long) (Math.random() * 1000000));
+            } else {
+                gameRunner.setSeed(SEED);
+            }
 
             gameRunner.addAgent(agentPlayer, "Player");
             gameRunner.addAgent(agentBoss, "Boss");
@@ -86,138 +100,135 @@ class BossWinRateEvaluator implements Evaluator {
             score += winScoreCal;
         }
 
-        // Set fitness(win rate)
+        // Set fitness(win score)
         double fitness = score / FIGHT_NUM;
-        fitness = Math.round(fitness * 1000.0) / 1000.0;
         fitness = (fitness + indiv.getFitness()) / 2;
-        indiv.setFitness(fitness);
+        fitness = Math.round(fitness * 1000.0) / 1000.0;
 
-        // System.out.printf("size: %d/%d, fitness: %f\n", i, size, fitness);
-        // System.out.println("fitness: " + fitness);
+        return fitness;
     }
 
-    public void evaluate(Individual[] indivs, int size) {
-        /* Calculate fitness(win rate): fight with boss n times */
-        System.out.println("Progress:");
+    // public void evaluate(Individual[] indivs, int size) {
+    //     /* Calculate fitness(win rate): fight with boss n times */
+    //     System.out.println("Progress:");
 
-        for (int i = 0; i < size; ++i) {
-            // write gene file
-            try {
-                FileWriter fw = new FileWriter(chromBuffer);
-                fw.write(indivs[i].toString());
-                fw.flush();
-                fw.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    //     for (int i = 0; i < size; ++i) {
+    //         // write gene file
+    //         try {
+    //             FileWriter fw = new FileWriter(chromBuffer);
+    //             fw.write(indivs[i].toString());
+    //             fw.flush();
+    //             fw.close();
+    //         } catch (IOException e) {
+    //             e.printStackTrace();
+    //         }
 
-            // run game
-            double score = 0;
-            for (int j = 0; j < FIGHT_NUM; ++j) {
-                // setup game runner
-                MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
-                gameRunner.setLeagueLevel(3);
-                gameRunner.setSeed(53295539L);
+    //         // run game
+    //         double score = 0;
+    //         for (int j = 0; j < FIGHT_NUM; ++j) {
+    //             // setup game runner
+    //             MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
+    //             gameRunner.setLeagueLevel(3);
+    //             gameRunner.setSeed(53295539L);
 
-                gameRunner.addAgent(agentPlayer, "Player");
-                gameRunner.addAgent(agentBoss, "Boss");
-                // parse result
-                GameResult gameResult = gameRunner.simulate();
+    //             gameRunner.addAgent(agentPlayer, "Player");
+    //             gameRunner.addAgent(agentBoss, "Boss");
+    //             // parse result
+    //             GameResult gameResult = gameRunner.simulate();
 
-                int turn = (gameResult.views.size() + 1) / 2;
-                int winner, losser;
-                if (gameResult.scores.get(0) > gameResult.scores.get(1)) {
-                    winner = 0;
-                    losser = 1;
-                } else {
-                    winner = 1;
-                    losser = 0;
-                }
+    //             int turn = (gameResult.views.size() + 1) / 2;
+    //             int winner, losser;
+    //             if (gameResult.scores.get(0) > gameResult.scores.get(1)) {
+    //                 winner = 0;
+    //                 losser = 1;
+    //             } else {
+    //                 winner = 1;
+    //                 losser = 0;
+    //             }
 
-                double winScoreCal = 0;
-                switch (gameResult.scores.get(winner)) {
-                    case 1:
-                        // Complete win: win turns + 220
-                        winScoreCal = (220 - turn) + 220;
-                        break;
-                    case 3:
-                    case 2:
-                        // Health win: win health + 220
-                        winScoreCal = gameResult.scores.get(winner) - gameResult.scores.get(losser) + 220;
-                        break;
-                    default:
-                        // Mana win: win mana
-                        winScoreCal = gameResult.scores.get(winner) - gameResult.scores.get(losser);
-                        break;
-                }
+    //             double winScoreCal = 0;
+    //             switch (gameResult.scores.get(winner)) {
+    //                 case 1:
+    //                     // Complete win: win turns + 220
+    //                     winScoreCal = (220 - turn) + 220;
+    //                     break;
+    //                 case 3:
+    //                 case 2:
+    //                     // Health win: win health + 220
+    //                     winScoreCal = gameResult.scores.get(winner) - gameResult.scores.get(losser) + 220;
+    //                     break;
+    //                 default:
+    //                     // Mana win: win mana
+    //                     winScoreCal = gameResult.scores.get(winner) - gameResult.scores.get(losser);
+    //                     break;
+    //             }
 
-                // System.out.println("GameResult: " + gameResult.scores);
-                // System.out.print("WinScore: " + winScoreCal + ", ");
+    //             // System.out.println("GameResult: " + gameResult.scores);
+    //             // System.out.print("WinScore: " + winScoreCal + ", ");
 
-                winScoreCal /= 440;
-                winScoreCal = (winner == 0) ? winScoreCal : winScoreCal * -1;
+    //             winScoreCal /= 440;
+    //             winScoreCal = (winner == 0) ? winScoreCal : winScoreCal * -1;
 
-                // System.out.println(winScoreCal + "\n");
+    //             // System.out.println(winScoreCal + "\n");
 
-                score += winScoreCal;
+    //             score += winScoreCal;
 
-                // print %
-                int games = i * FIGHT_NUM + j + 1;
-                String msg = (Math.round(winScoreCal * 1000000.0) / 1000000.0) + "\t"
-                        + gameResult.gameParameters.get(0);
+    //             // print %
+    //             int games = i * FIGHT_NUM + j + 1;
+    //             String msg = (Math.round(winScoreCal * 1000000.0) / 1000000.0) + "\t"
+    //                     + gameResult.gameParameters.get(0);
 
-                writeLog(msg);
-                System.out.printf("%d/%d\t%f\t%s", games, (FIGHT_NUM * size), winScoreCal,
-                        gameResult.gameParameters.get(0));
-            }
+    //             writeLog(msg);
+    //             System.out.printf("%d/%d\t%f\t%s", games, (FIGHT_NUM * size), winScoreCal,
+    //                     gameResult.gameParameters.get(0));
+    //         }
 
-            // Set fitness(win rate)
-            double fitness = score / FIGHT_NUM;
-            fitness = Math.round(fitness * 1000.0) / 1000.0;
-            fitness = (fitness + indivs[i].getFitness()) / 2;
-            indivs[i].setFitness(fitness);
+    //         // Set fitness(win rate)
+    //         double fitness = score / FIGHT_NUM;
+    //         fitness = Math.round(fitness * 1000.0) / 1000.0;
+    //         fitness = (fitness + indivs[i].getFitness()) / 2;
+    //         indivs[i].setFitness(fitness);
 
-            // System.out.printf("size: %d/%d, fitness: %f\n", i, size, fitness);
-            // System.out.println("fitness: " + fitness);
-        }
-    }
+    //         // System.out.printf("size: %d/%d, fitness: %f\n", i, size, fitness);
+    //         // System.out.println("fitness: " + fitness);
+    //     }
+    // }
 
-    private String logFileName = "bot/evolveLog.txt";
+    // private String logFileName = "bot/evolveLog.txt";
 
-    private void writeLog(String msg) {
-        File file = new File(logFileName);
+    // private void writeLog(String msg) {
+    //     File file = new File(logFileName);
 
-        try {
-            if (!file.exists()) {
-                file.createNewFile();
-            }
+    //     try {
+    //         if (!file.exists()) {
+    //             file.createNewFile();
+    //         }
 
-            FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
-            BufferedWriter bw = new BufferedWriter(fw);
+    //         FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
+    //         BufferedWriter bw = new BufferedWriter(fw);
 
-            bw.write(msg);
+    //         bw.write(msg);
 
-            bw.close();
-            fw.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    //         bw.close();
+    //         fw.close();
+    //     } catch (IOException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
 }
 
 // class TestEvaluator implements Evaluator {
-//     private double tarVal = 0.01;
+// private double tarVal = 0.01;
 
-//     public void evaluate(Individual[] indivs, int size) {
-//         for (int i = 0; i < size; ++i) {
-//             double fitness = 0;
+// public void evaluate(Individual[] indivs, int size) {
+// for (int i = 0; i < size; ++i) {
+// double fitness = 0;
 
-//             for (int j = 0; j < indivs[i].getChromSize(); ++j) {
-//                 fitness += 1 - Math.abs(tarVal - indivs[i].getGene(j).getValue());
-//             }
-//             indivs[i].setFitness(fitness);
-//         }
-//     }
+// for (int j = 0; j < indivs[i].getChromSize(); ++j) {
+// fitness += 1 - Math.abs(tarVal - indivs[i].getGene(j).getValue());
 // }
-
+// indivs[i].setFitness(fitness);
+// }
+// }
+// }

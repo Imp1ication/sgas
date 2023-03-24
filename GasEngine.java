@@ -17,11 +17,6 @@ public class GasEngine {
 
     private String logFileName = "bot/gasLog.txt";
 
-    public void generatePopulation(String sampleGene, int popSize) {
-		PopulationCreator rpc = new RandomPopCreator();
-        Evaluator bwr = new BossWinRateEvaluator();
-        generatePopulation(sampleGene, popSize, rpc, bwr);
-    }
     public void generatePopulation(String sampleGene, int popSize, PopulationCreator pc, Evaluator eva) {
         evaluator = eva;
 

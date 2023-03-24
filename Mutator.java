@@ -26,7 +26,7 @@ class SimpleRandomMutator implements Mutator {
                 // mutate value 
                     double val = (double)(Math.random() * (upper - lower)) + lower;
                     val = Math.round(val * 100.0) / 100.0;
-                    temp.setGene(val);
+                    temp.setValue(val);
                     indivs[i].setGene(j, temp);
                 }
             }

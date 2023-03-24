@@ -15,17 +15,10 @@ public class Population {
         this.indivs = new Individual[size];
     }
 
-/* inti Population */
-    public void initPopulation(String filePath) {  // default creator
-    	PopulationCreator rpc = new RandomPopCreator();
-        Evaluator eva = new BossWinRateEvaluator();
-
-    	initPopulation(filePath, rpc, eva);
-    }
-
-    public void initPopulation(String filePath, PopulationCreator creator, Evaluator eva) {
+    // Initialize population
+    public void initPopulation(String sampleChrom, PopulationCreator creator, Evaluator eva) {
     	try { 
-    		Path path = Path.of(filePath);
+    		Path path = Path.of(sampleChrom);
     		String data = Files.readString(path);
     		
             creator.createPopulation(data, indivs, size);
@@ -36,22 +29,40 @@ public class Population {
         evaluate(eva);
     }
 
-/* get, set */
+    // Setters and getters
+    public int getGeneration() { return generation; }
     public int getSize() { return size; }
+
     public Individual getIndividual(int index) {
-    	if(index >= size) return null;
-    	return indivs[index];
+    	if(index < 0 || index >= size) return null;
+
+        Individual indiv = null;
+        try {
+            indiv = indivs[index].clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+    	return indiv;
     }
     public void setIndividual(int index, Individual indiv) {
-    	if(index >= size) return;
-    	indivs[index] = indiv;
+    	if(index < 0 || index >= size) return;
+
+        try {
+            indivs[index] = indiv.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
     }
-    public int getGeneration() { return generation; }
+    	
 
-/* Evolve func */
-
+    // Evolve methods
     public void evaluate(Evaluator eva) {
-        eva.evaluate(indivs, size);
+        System.out.println("Evaluate generation " + generation);
+        for(int i=0; i<size; ++i) {
+            indivs[i].setFitness(eva.evaluate(indivs[i]));
+            System.out.printf("Individual %d/%d\t%f\n", i, size, indivs[i].getFitness());
+        }
         generation += 1;
     }
     
@@ -67,10 +78,8 @@ public class Population {
         mutator.mutate(indivs, size);
     }
 
-/* Tool func */
-
-
-/* Other func */
+    // Other methods
+    @Override
     public String toString(){
         String msg = "";
         msg += "Generation: " + String.valueOf(generation) + "\n";
@@ -80,5 +89,4 @@ public class Population {
         }
         return msg;
     }
-
 }
